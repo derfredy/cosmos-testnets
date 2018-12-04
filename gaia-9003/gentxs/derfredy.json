@@ -1,0 +1,54 @@
+{
+  "type": "auth/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "Description": {
+            "moniker": "CosCloud",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "Commission": {
+            "rate": "1.0000000000",
+            "max_rate": "1.0000000000",
+            "max_change_rate": "1.0000000000"
+          },
+          "delegator_address": "cosmos185n9jln2g4w79w39m0g85x2tns6uekqgzrhnap",
+          "validator_address": "cosmosvaloper185n9jln2g4w79w39m0g85x2tns6uekqg8hrx3j",
+          "pubkey": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "bzGht4cp6rZFe0psHol1NxdPf+hvOEIp6KCbIZsYNGc="
+          },
+          "delegation": {
+            "denom": "STAKE",
+            "amount": "10000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [
+        {
+          "denom": "",
+          "amount": "0"
+        }
+      ],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AgwqSG/R/k+kUtxO1tVqAMwGvuTDGslMGHdyr8gV7GY7"
+        },
+        "signature": "JKT59jN5sx+Rtjtk8TBaR7PmW6Fje0cY0N6ArgxNiZNwAn8Wk3btB9pkjXaWfo4E+L577SubadTsH5UQZ+0n9w==",
+        "account_number": "0",
+        "sequence": "0"
+      }
+    ],
+    "memo": "751870951bf79c152f93e7e7dff3bf02929c5479@142.93.26.98:26656"
+  }
+}
