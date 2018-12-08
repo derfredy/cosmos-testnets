@@ -17,6 +17,6 @@ gaiad gentx \
   --pubkey $(gaiad tendermint show-validator)  \
   --name <key-id>
 ```
-7. Submit your genesis transaction as a github PR with a justification why you want to join and who you are. The file is in `$HOMEE/.gaiad/config/gentx`.
+7. Submit your genesis transaction as a github PR with a justification why you want to join and who you are. The file is in `$HOME/.gaiad/config/gentx`.
 8. Remove the old genesis file with `rm $HOME/.gaiad/config/genesis.json`
 9. Download the new [genesis.json](genesis.json) to `$HOME/.gaiad/config/genesis.json`
