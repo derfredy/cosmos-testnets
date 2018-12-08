@@ -1,5 +1,7 @@
 # Cosmos Hub Testnet - *jenki-1000*
 
+**DO NOT MODIFY THE TRANSACTION IN THE GENTX FOLDER.**
+
 ## The Steps
 
 1. Install `v0.27.1` of the [cosmos-sdk](https://github.com/cosmos/cosmos-sdk)
