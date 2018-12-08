@@ -1,32 +1,22 @@
 # Cosmos Hub Testnet - *jenki-1000*
 
-## Submit a genesis transaction
+## The Steps
 
-We are trying to start a testnet from the Cosmos Validator Community to test the bug fixes and practice the start of Game of Stakes.
-
-To be bonded at genesis, you need to generate a genesis transaction and submit it.
-
-### To generate a genesis transaction,
-
-install `v0.27.1` of the Cosmos SDK.
-
-run `gaiad init`
-
-Download [genesis](genesis.json) to `$HOME/.gaiad/config/genesis.json`
-
-if you need to recover the key you used for signup do
-
-`gaiacli keys add <key-id>  --recover`
-
-
-```
+1. Install `v0.27.1` of the [cosmos-sdk](https://github.com/cosmos/cosmos-sdk)
+2. Run `gaiad init --moniker=<moniker>`
+3. Remove the existing genesis file with `rm $HOME/.gaiad/config/genesis.json`
+4. Download the new [state.json](state.json) to `$HOME/.gaiad/config/genesis.json`
+5. (Optionally) Recover your GoS key with `gaiacli keys add <key-name> --recover`
+6. Create a genesis transaction with
+```bash
 gaiad gentx \
-  --amount 10000STAKE \
+  --amount 10000STEAK \
   --commission-rate "0.10" \
   --commission-max-rate "1.00" \
   --commission-max-change-rate "0.01" \
   --pubkey $(gaiad tendermint show-validator)  \
   --name <key-id>
 ```
-
-This will generate a file roughly like `$HOME/.gaiad/config/gentx/gentx-c00ce0b868bd5d5576d23f0ad1090f3f478b7961.json`
+7. Submit your genesis transaction as a github PR with a justification why you want to join and who you are. The file is in `$HOMEE/.gaiad/config/gentx`.
+8. Remove the old genesis file with `rm $HOME/.gaiad/config/genesis.json`
+9. Download the new [genesis.json](genesis.json) to `$HOME/.gaiad/config/genesis.json`
